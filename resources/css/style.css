@@ -25,6 +25,7 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -47,6 +48,7 @@ header {
 header .content {
   display: flex;
   align-items: center;
+  justify-items: center;
   padding: 1.875rem;
 }
 
@@ -140,7 +142,7 @@ header .mobile {
   background-image: url(../images/banner-landingpage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 #sign-up-cta {
@@ -148,9 +150,9 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-top: 170px;
-  margin-left: 100px;
-  padding-bottom: 56px;
+  position: relative;
+  top: 171px;
+  left: 10%;
 }
 
 #sign-up-cta .content {
@@ -192,7 +194,7 @@ header .mobile {
 @media only screen and (max-width: 768px) {
   #sign-up-section {
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     height: 28rem;
   }
 
@@ -240,7 +242,7 @@ header .mobile {
 #features-section {
   display: flex;
   justify-content: space-between;
-  padding: 4rem 5%;
+  padding: 4rem;
   background-color: #f3f3f3;
 }
 
@@ -251,14 +253,17 @@ header .mobile {
   background-color: white;
 }
 
-.feature .image-container img{
+.feature .image-container img {
   width: 90%;
   height: 65%;
   margin: 0 auto;
 }
 
+.feature .content {
+  padding: 2.5rem 0;
+}
+
 .feature h2 {
-  padding-top: 40px;
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
@@ -274,7 +279,7 @@ header .mobile {
 
 @media only screen and (max-width: 768px) {
   #features-section {
-    padding: 2rem 2.5%;
+    padding: 1rem;
   }
 
   .feature {
@@ -285,13 +290,11 @@ header .mobile {
   .feature h2 {
     font-size: 2rem;
     line-height: 1.3;
-    text-align: left;
   }
 
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
-    text-align: left;
   }
 }
 
@@ -308,7 +311,6 @@ header .mobile {
 
   .feature content {
     padding: 1.25rem 0 1.875rem 0;
-    margin: 0;
   }
 
   .feature h2 {
@@ -354,8 +356,6 @@ header .mobile {
   padding: 0 1%;
 }
 
-#filters-section .images-container img {
-  max-width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
